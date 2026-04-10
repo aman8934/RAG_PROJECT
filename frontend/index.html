@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RAG Document Q&A</h1>
+        
+        <!-- Document Upload -->
+        <div class="section">
+            <h2>Upload Documents</h2>
+            <input type="file" id="fileInput" multiple>
+            <button onclick="uploadFiles()">Upload</button>
+            <div id="uploadStatus"></div>
+        </div>
+        
+        <!-- Chat Interface -->
+        <div class="section">
+            <h2>Ask Questions</h2>
+            <div id="chatMessages" class="chat-box"></div>
+            <div class="input-group">
+                <input type="text" id="queryInput" placeholder="Ask a question...">
+                <button onclick="sendQuery()">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
